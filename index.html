@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LunoCampus Africa</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: #0b1b2b;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* HERO */
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 80px 10%;
+      background: radial-gradient(circle at top, #122b45, #0b1b2b);
+    }
+
+    .hero-text {
+      max-width: 55%;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #cbd5e1;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      margin-right: 10px;
+      border-radius: 8px;
+      font-weight: 600;
+      transition: 0.3s ease;
+    }
+
+    .btn-primary {
+      background: #d4af37;
+      color: #0b1b2b;
+    }
+
+    .btn-primary:hover {
+      background: #f5c542;
+    }
+
+    .btn-outline {
+      border: 1px solid #ffffff;
+      color: #ffffff;
+    }
+
+    .btn-outline:hover {
+      background: #ffffff;
+      color: #0b1b2b;
+    }
+
+    .hero-image {
+      width: 40%;
+      height: 300px;
+      background: linear-gradient(135deg, #1e3a5f, #0f2238);
+      border-radius: 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #94a3b8;
+      font-size: 14px;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* TRUST BAR */
+    .trust {
+      display: flex;
+      justify-content: space-around;
+      padding: 40px 10%;
+      background: #0f2238;
+      font-size: 14px;
+      color: #cbd5e1;
+    }
+
+    /* SERVICES */
+    .section {
+      padding: 80px 10%;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .card {
+      background: #122b45;
+      padding: 25px;
+      border-radius: 12px;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #163252;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #d4af37;
+    }
+
+    /* PACKAGES */
+    .packages {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .package {
+      flex: 1;
+      background: #122b45;
+      padding: 30px;
+      border-radius: 12px;
+    }
+
+    .package h3 {
+      margin-bottom: 15px;
+      color: #d4af37;
+    }
+
+    .package ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .package ul li {
+      margin-bottom: 8px;
+      color: #cbd5e1;
+    }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, #0f2238, #122b45);
+      text-align: center;
+      padding: 80px 10%;
+    }
+
+    .cta h2 {
+      margin-bottom: 20px;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 13px;
+      color: #94a3b8;
+      background: #081522;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .hero-text {
+        max-width: 100%;
+      }
+
+      .hero-image {
+        width: 100%;
+        margin-top: 30px;
+      }
+
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .packages {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-text">
+    <h1>Smarter Campus Systems for African Schools</h1>
+    <p>
+      We help schools improve visibility, maintenance, and communication through signage systems, facility support, and digital platforms.
+    </p>
+    <a href="#" class="btn btn-primary">Request School Assessment</a>
+    <a href="#" class="btn btn-outline">View Packages</a>
+  </div>
+
+  <div class="hero-image">
+    Campus Systems Visual Placeholder<br/>
+    (Replace with your logo / school mockup image)
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust">
+  <div>🏫 School Systems</div>
+  <div>🛠 Maintenance Support</div>
+  <div>🌐 Digital School Websites</div>
+  <div>📍 On-site Service</div>
+</div>
+
+<!-- SERVICES -->
+<section class="section">
+  <h2>Our Services</h2>
+  <div class="cards">
+
+    <div class="card">
+      <h3>Signage Systems</h3>
+      <p>Classroom, safety, administrative and outdoor school branding systems.</p>
+    </div>
+
+    <div class="card">
+      <h3>Maintenance Services</h3>
+      <p>Repairs, facility upkeep, and scheduled monthly school maintenance visits.</p>
+    </div>
+
+    <div class="card">
+      <h3>Digital Campus Systems</h3>
+      <p>Basic school websites and communication platforms for parents and students.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- PACKAGES -->
+<section class="section">
+  <h2>School Packages</h2>
+
+  <div class="packages">
+
+    <div class="package">
+      <h3>Standard Package</h3>
+      <ul>
+        <li>Classroom & office signage</li>
+        <li>Outdoor school board</li>
+        <li>Basic school website</li>
+        <li>Monthly maintenance visit</li>
+      </ul>
+      <a href="#" class="btn btn-primary">Request Quote</a>
+    </div>
+
+    <div class="package">
+      <h3>Premium Package</h3>
+      <ul>
+        <li>Full branding upgrade</li>
+        <li>Event banners & visuals</li>
+        <li>Priority repairs (24–48h)</li>
+        <li>Quarterly maintenance report</li>
+      </ul>
+      <a href="#" class="btn btn-primary">Request Quote</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Improve Your School?</h2>
+  <p>Book a school assessment and get a tailored campus solution.</p>
+  <br/>
+  <a href="#" class="btn btn-primary">Book Assessment</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  LunoCampus Africa © 2026 | Building smarter campuses across Africa
+</footer>
+
+</body>
+</html>
